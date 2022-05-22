@@ -7,11 +7,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// Universally unique identifier
-
 model Feedback {
-  id String @id @default(uuid())
-
+  id         String  @id @default(uuid())
   type       String
   comment    String
   screenshot String?
